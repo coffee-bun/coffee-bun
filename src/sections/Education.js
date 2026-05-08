@@ -5,6 +5,20 @@ import Footer from "../components/footer";
 import GradPic from "../assets/kyle-hover.jpg"; 
 import PUPLogo from "../assets/pup-icon.png"; 
 import SampleImage from "../assets/portfolio1colored.png"; 
+import Cert1 from "../assets/certificates/1 Data Analyst 101.jpg"; 
+import Cert2 from "../assets/certificates/1 Introduction to Excel.jpg"; 
+import Cert3 from "../assets/certificates/Data Analytics Fundamentals.jpg"; 
+import Cert4 from "../assets/certificates/Front End Certification.jpg"; 
+import Cert5 from "../assets/certificates/introduction to CSS Certificate.jpg"; 
+import Cert6 from "../assets/certificates/Introduction to Front End Development.jpg"; 
+import Cert7 from "../assets/certificates/Introduction to HTML Certificate.jpg"; 
+import Cert8 from "../assets/certificates/introduction to JavaScript Certificate.jpg"; 
+import Cert9 from "../assets/certificates/mabl Skills Certification Advanced.jpg"; 
+import Cert10 from "../assets/certificates/mabl Skills Certification Non-functional testing.jpg"; 
+import Cert11 from "../assets/certificates/mabl Skills Certification.jpg"; 
+import Cert12 from "../assets/certificates/Web Development Certificate.jpg"; 
+
+
 
 
 function Education() {
@@ -67,7 +81,7 @@ const closeImageModal = () => {
 
   {/* TITLE */}
   <div className="education-page2-header">
-    <h2>College Relevant College</h2>
+    <h2>College Relevant Subjects</h2>
     <div className="education-page2-divider"></div>
   </div>
 
@@ -251,40 +265,95 @@ const closeImageModal = () => {
 
         {/* SECTION 3: CLASS GALLERY */}
         <div className="gallery-section">
-          <h3>Class Moments</h3>
+          <h3>Certification</h3>
           <div className="class-gallery">
-            <div className="gallery-item" onClick={() => openImageModal(SampleImage, "Class moment 1")}>
+            <div className="gallery-item" onClick={() => openImageModal(Cert1, "Class moment 1")}>
               <div className="gallery-item-content">
                 <div className="gallery-item-image">
-                  <img src={SampleImage} alt="Class moment 1" />
+                  <img src={Cert1} alt="Class moment 1" />
                 </div>
               </div>
             </div>
-            <div className="gallery-item" onClick={() => openImageModal(SampleImage, "Class moment 2")}>
+            <div className="gallery-item" onClick={() => openImageModal(Cert2, "Class moment 2")}>
               <div className="gallery-item-content">
                 <div className="gallery-item-image">
-                  <img src={SampleImage} alt="Class moment 2" />
+                  <img src={Cert2} alt="Class moment 2" />
                 </div>
               </div>
             </div>
-            <div className="gallery-item" onClick={() => openImageModal(SampleImage, "Class moment 3")}>
+            <div className="gallery-item" onClick={() => openImageModal(Cert6, "Class moment 3")}>
               <div className="gallery-item-content">
                 <div className="gallery-item-image">
-                  <img src={SampleImage} alt="Class moment 3" />
+                  <img src={Cert6} alt="Class moment 3" />
                 </div>
               </div>
             </div>
-            <div className="gallery-item" onClick={() => openImageModal(SampleImage, "Class moment 4")}>
+            <div className="gallery-item" onClick={() => openImageModal(Cert4, "Class moment 4")}>
               <div className="gallery-item-content">
                 <div className="gallery-item-image">
-                  <img src={SampleImage} alt="Class moment 4" />
+                  <img src={Cert4} alt="Class moment 4" />
+                </div>
+              </div>
+            </div>
+                        <div className="gallery-item" onClick={() => openImageModal(Cert7, "Class moment 5")}>
+              <div className="gallery-item-content">
+                <div className="gallery-item-image">
+                  <img src={Cert7} alt="Class moment 5" />
+                </div>
+              </div>
+            </div>
+                        <div className="gallery-item" onClick={() => openImageModal(Cert5, "Class moment 6")}>
+              <div className="gallery-item-content">
+                <div className="gallery-item-image">
+                  <img src={Cert5} alt="Class moment 6" />
+                </div>
+              </div>
+            </div>
+                        <div className="gallery-item" onClick={() => openImageModal(Cert8, "Class moment 7")}>
+              <div className="gallery-item-content">
+                <div className="gallery-item-image">
+                  <img src={Cert8} alt="Class moment 7" />
+                </div>
+              </div>
+            </div>
+                        <div className="gallery-item" onClick={() => openImageModal(Cert12, "Class moment 8")}>
+              <div className="gallery-item-content">
+                <div className="gallery-item-image">
+                  <img src={Cert12} alt="Class moment 8" />
+                </div>
+              </div>
+            </div>
+                                    <div className="gallery-item" onClick={() => openImageModal(Cert11, "Class moment 9")}>
+              <div className="gallery-item-content">
+                <div className="gallery-item-image">
+                  <img src={Cert11} alt="Class moment 9" />
+                </div>
+              </div>
+            </div>
+                                    <div className="gallery-item" onClick={() => openImageModal(Cert9, "Class moment 10")}>
+              <div className="gallery-item-content">
+                <div className="gallery-item-image">
+                  <img src={Cert9} alt="Class moment 10" />
+                </div>
+              </div>
+            </div>
+                                    <div className="gallery-item" onClick={() => openImageModal(Cert10, "Class moment 11")}>
+              <div className="gallery-item-content">
+                <div className="gallery-item-image">
+                  <img src={Cert10} alt="Class moment 11" />
+                </div>
+              </div>
+            </div>
+                                    <div className="gallery-item" onClick={() => openImageModal(Cert3, "Class moment 12")}>
+              <div className="gallery-item-content">
+                <div className="gallery-item-image">
+                  <img src={Cert3} alt="Class moment 12" />
                 </div>
               </div>
             </div>
           </div>
           <p className="gallery-description">
-            These moments represent not just academic experiences, but the journey of growth,
-            collaboration, and shared challenges throughout my university life.
+           A collection of certificates I received from various trainings, workshops, and learning experiences throughout my journey.
           </p>
         </div>
       </div>

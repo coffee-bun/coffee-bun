@@ -1422,7 +1422,7 @@ html, body {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: #0f0f0f; 
+  background: #ffffff; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1430,8 +1430,7 @@ html, body {
 }
 
 .capability-icon img {
-  width: 30px;
-  filter: brightness(0) invert(1);
+  width: 50px;
 }
 
 /* Title */

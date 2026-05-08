@@ -103,146 +103,98 @@ function Home() {
     }
   ];
 
-  const maxIndex = Math.max(0, experiences.length - visibleCards);
+ const startXRef = useRef(0);
+const currentTranslateRef = useRef(0);
+const prevTranslateRef = useRef(0);
 
-  // Get the appropriate client coordinate based on event type
-  const getClientX = (e) => {
-    if (e.touches) {
-      return e.touches[0].clientX;
-    }
-    return e.clientX;
-  };
+const maxIndex = Math.max(0, experiences.length - visibleCards);
 
-  const handleDragStart = (e) => {
-    e.preventDefault();
-    setIsDragging(true);
-    setIsAnimating(false);
-    if (animationRef.current) {
-      cancelAnimationFrame(animationRef.current);
-    }
-    const clientX = getClientX(e);
-    setStartX(clientX);
-    setCurrentX(clientX);
-    setDragOffset(currentIndex * getSlideWidth());
-  };
+const getClientX = (e) => {
+  return e.touches ? e.touches[0].clientX : e.clientX;
+};
 
-  const handleDragMove = (e) => {
-    if (!isDragging) return;
-    e.preventDefault();
-    
-    const clientX = getClientX(e);
-    const deltaX = clientX - startX;
-    let newOffset = dragOffset - deltaX;
-    
-    // Add resistance at boundaries for better UX
-    const minOffset = 0;
-    const maxOffset = maxIndex * getSlideWidth();
-    
-    if (newOffset < minOffset) {
-      newOffset = minOffset + (newOffset - minOffset) * 0.3;
-    } else if (newOffset > maxOffset) {
-      newOffset = maxOffset + (newOffset - maxOffset) * 0.3;
-    }
-    
-    setCurrentX(clientX);
-    
-    if (trackRef.current) {
-      trackRef.current.style.transform = `translateX(-${newOffset}px)`;
-      trackRef.current.style.transition = 'none';
-    }
-  };
+const setSliderPosition = (value) => {
+  if (trackRef.current) {
+    trackRef.current.style.transform = `translate3d(-${value}px, 0, 0)`;
+  }
+};
 
-  const handleDragEnd = () => {
-    if (!isDragging) return;
-    setIsDragging(false);
-    
-    const deltaX = currentX - startX;
-    const slideWidth = getSlideWidth();
-    const dragThreshold = slideWidth * 0.3; // 30% of slide width
-    
-    let newIndex = currentIndex;
-    
-    if (Math.abs(deltaX) > dragThreshold) {
-      if (deltaX < 0 && currentIndex < maxIndex) {
-        newIndex = currentIndex + 1;
-      } else if (deltaX > 0 && currentIndex > 0) {
-        newIndex = currentIndex - 1;
-      }
-    }
-    
-    animateToIndex(newIndex);
-  };
+const handleDragStart = (e) => {
+  setIsDragging(true);
 
-  const animateToIndex = (targetIndex) => {
-    setIsAnimating(true);
-    const startOffset = currentIndex * getSlideWidth();
-    const targetOffset = targetIndex * getSlideWidth();
-    const distance = targetOffset - startOffset;
-    const startTime = performance.now();
-    const duration = 400; // ms
-    
-    const animate = (currentTime) => {
-      const elapsed = currentTime - startTime;
-      const progress = Math.min(1, elapsed / duration);
-      
-      // Easing function for smooth animation
-      const easeOutCubic = 1 - Math.pow(1 - progress, 3);
-      const currentOffset = startOffset + (distance * easeOutCubic);
-      
-      if (trackRef.current) {
-        trackRef.current.style.transform = `translateX(-${currentOffset}px)`;
-        trackRef.current.style.transition = 'none';
-      }
-      
-      if (progress < 1) {
-        animationRef.current = requestAnimationFrame(animate);
-      } else {
-        setCurrentIndex(targetIndex);
-        setIsAnimating(false);
-        if (trackRef.current) {
-          trackRef.current.style.transform = `translateX(-${targetOffset}px)`;
-        }
-      }
-    };
-    
-    if (animationRef.current) {
-      cancelAnimationFrame(animationRef.current);
-    }
-    animationRef.current = requestAnimationFrame(animate);
-  };
+  startXRef.current = getClientX(e);
+  prevTranslateRef.current = currentIndex * getSlideWidth();
 
-  // Update visible cards based on screen size
-  useEffect(() => {
-    const updateVisibleCards = () => {
-      if (window.innerWidth <= 768) {
-        setVisibleCards(1);
-      } else if (window.innerWidth <= 1024) {
-        setVisibleCards(2);
-      } else {
-        setVisibleCards(3);
-      }
-    };
-    
-    updateVisibleCards();
-    window.addEventListener('resize', updateVisibleCards);
-    
-    return () => {
-      window.removeEventListener('resize', updateVisibleCards);
-    };
-  }, []);
+  if (trackRef.current) {
+    trackRef.current.style.transition = "none";
+  }
+};
 
-  useEffect(() => {
-    setCurrentIndex(0);
-  }, [visibleCards]);
+const handleDragMove = (e) => {
+  if (!isDragging) return;
 
-  // Cleanup animation on unmount
-  useEffect(() => {
-    return () => {
-      if (animationRef.current) {
-        cancelAnimationFrame(animationRef.current);
-      }
-    };
-  }, []);
+  const currentX = getClientX(e);
+  const deltaX = currentX - startXRef.current;
+
+  let newTranslate = prevTranslateRef.current - deltaX;
+
+  const minOffset = 0;
+  const maxOffset = maxIndex * getSlideWidth();
+
+  // Resistance effect
+  if (newTranslate < minOffset) {
+    newTranslate = minOffset + (newTranslate - minOffset) * 0.25;
+  }
+
+  if (newTranslate > maxOffset) {
+    newTranslate = maxOffset + (newTranslate - maxOffset) * 0.25;
+  }
+
+  currentTranslateRef.current = newTranslate;
+
+  requestAnimationFrame(() => {
+    setSliderPosition(newTranslate);
+  });
+};
+
+const handleDragEnd = () => {
+  if (!isDragging) return;
+
+  setIsDragging(false);
+
+  const movedBy =
+    currentTranslateRef.current - prevTranslateRef.current;
+
+  let newIndex = currentIndex;
+
+  const threshold = getSlideWidth() * 0.2;
+
+  if (movedBy > threshold && currentIndex < maxIndex) {
+    newIndex += 1;
+  }
+
+  if (movedBy < -threshold && currentIndex > 0) {
+    newIndex -= 1;
+  }
+
+  goToSlide(newIndex);
+};
+
+const goToSlide = (index) => {
+  const newTranslate = index * getSlideWidth();
+
+  setCurrentIndex(index);
+
+  if (trackRef.current) {
+    trackRef.current.style.transition =
+      "transform 0.45s cubic-bezier(0.22, 1, 0.36, 1)";
+
+    setSliderPosition(newTranslate);
+  }
+
+  currentTranslateRef.current = newTranslate;
+  prevTranslateRef.current = newTranslate;
+};
   
     // Modal functionality using React useEffect
   useEffect(() => {
@@ -428,7 +380,6 @@ function Home() {
               <button
                 key={index}
                 className={`pagination-dot ${currentIndex === index ? 'active' : ''}`}
-                onClick={() => animateToIndex(index)}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}

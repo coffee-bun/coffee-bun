@@ -4,11 +4,28 @@ import Footer from "../components/footer";
 // Import your images - adjust the paths based on your actual file structure
 import PrimaryImage from "../assets/kyle-primary.jpg";
 import HoverImage from "../assets/kyle-hover.jpg";
-import SeleniumIcon from "../assets/selenium-icon.png";
 import LeaderImage from "../assets/leader-icon.png";
 import TesterImage from "../assets/tester-icon.png";
 import FrontImage from "../assets/frontend-icon.png";
+import TroubleImage from "../assets/troubleshoot-icon.png";
+import HardwareImage from "../assets/hardware-icon.png";
+import SoftwareImage from "../assets/software-icon.png";
+import HTMLImage from "../assets/html-icon.png";
+import CSSImage from "../assets/css-icon.png";
+import JSImage from "../assets/javascript-icon.png";
+import ReactImage from "../assets/react-icon.png";
+import BootStrapImage from "../assets/bootstrap-icon.png";
+import WixImage from "../assets/wix-icon.png";
 import QAImage from "../assets/qa-icon.png";
+import JiraImage from "../assets/jira-icon.png";
+import SeleniumIcon from "../assets/selenium-icon.png";
+import CanvaIcon from "../assets/canva-icon.png";
+import FigmaIcon from "../assets/figma-icon.png";
+import PhotoshopIcon from "../assets/photoshop-icon.png";
+import LigjtroomIcon from "../assets/lightroom-icon.png";
+import CapcutIcon from "../assets/capcut-icon.png";
+import FilmoraIcon from "../assets/filmora-icon.png";
+
 
 function About() {
   useEffect(() => {
@@ -254,7 +271,7 @@ function About() {
   {/* Card 1 */}
   <div className="capability-card">
     <div className="capability-icon">
-      <img src={SeleniumIcon} alt="Capability Icon" />
+      <img src={TroubleImage} alt="Capability Icon" />
     </div>
     <h3 className="capability-title">Troubleshooting</h3>
     <p className="capability-description">
@@ -269,7 +286,7 @@ function About() {
   {/* Card 2 */}
   <div className="capability-card">
     <div className="capability-icon">
-      <img src={SeleniumIcon} alt="Capability Icon" />
+      <img src={HardwareImage} alt="Capability Icon" />
     </div>
     <h3 className="capability-title">Hardware Installation</h3>
     <p className="capability-description">
@@ -284,7 +301,7 @@ function About() {
   {/* Card 3 */}
   <div className="capability-card">
     <div className="capability-icon">
-      <img src={SeleniumIcon} alt="Capability Icon" />
+      <img src={SoftwareImage} alt="Capability Icon" />
     </div>
     <h3 className="capability-title">Software Installation</h3>
     <p className="capability-description">
@@ -297,7 +314,7 @@ function About() {
   </div>
     <div className="capability-card">
     <div className="capability-icon">
-      <img src={SeleniumIcon} alt="Capability Icon" />
+      <img src={HTMLImage} alt="Capability Icon" />
     </div>
     <h3 className="capability-title">HTML</h3>
     <p className="capability-description">
@@ -310,7 +327,7 @@ function About() {
   </div>
     <div className="capability-card">
     <div className="capability-icon">
-      <img src={SeleniumIcon} alt="Capability Icon" />
+      <img src={CSSImage} alt="Capability Icon" />
     </div>
     <h3 className="capability-title">CSS</h3>
     <p className="capability-description">
@@ -323,7 +340,7 @@ function About() {
   </div>
     <div className="capability-card">
     <div className="capability-icon">
-      <img src={SeleniumIcon} alt="Capability Icon" />
+      <img src={JSImage} alt="Capability Icon" />
     </div>
     <h3 className="capability-title">JavaScript</h3>
     <p className="capability-description">
@@ -336,7 +353,7 @@ function About() {
   </div>
     <div className="capability-card">
     <div className="capability-icon">
-      <img src={SeleniumIcon} alt="Capability Icon" />
+      <img src={ReactImage} alt="Capability Icon" />
     </div>
     <h3 className="capability-title">React</h3>
     <p className="capability-description">
@@ -349,7 +366,7 @@ function About() {
   </div>
     <div className="capability-card">
     <div className="capability-icon">
-      <img src={SeleniumIcon} alt="Capability Icon" />
+      <img src={BootStrapImage} alt="Capability Icon" />
     </div>
     <h3 className="capability-title">Bootstrap</h3>
     <p className="capability-description">
@@ -362,7 +379,7 @@ function About() {
   </div>
     <div className="capability-card">
     <div className="capability-icon">
-      <img src={SeleniumIcon} alt="Capability Icon" />
+      <img src={WixImage} alt="Capability Icon" />
     </div>
     <h3 className="capability-title">Wix</h3>
     <p className="capability-description">
@@ -375,7 +392,7 @@ function About() {
   </div>
       <div className="capability-card">
     <div className="capability-icon">
-      <img src={SeleniumIcon} alt="Capability Icon" />
+      <img src={QAImage} alt="Capability Icon" />
     </div>
     <h3 className="capability-title">Manual Testing</h3>
     <p className="capability-description">
@@ -388,7 +405,7 @@ function About() {
   </div>
       <div className="capability-card">
     <div className="capability-icon">
-      <img src={SeleniumIcon} alt="Capability Icon" />
+      <img src={JiraImage} alt="Capability Icon" />
     </div>
     <h3 className="capability-title">Jira</h3>
     <p className="capability-description">
@@ -414,7 +431,7 @@ function About() {
   </div>
       <div className="capability-card">
     <div className="capability-icon">
-      <img src={SeleniumIcon} alt="Capability Icon" />
+      <img src={CanvaIcon} alt="Capability Icon" />
     </div>
     <h3 className="capability-title">Canva</h3>
     <p className="capability-description">
@@ -427,7 +444,7 @@ function About() {
   </div>
       <div className="capability-card">
     <div className="capability-icon">
-      <img src={SeleniumIcon} alt="Capability Icon" />
+      <img src={FigmaIcon} alt="Capability Icon" />
     </div>
     <h3 className="capability-title">Figma</h3>
     <p className="capability-description">
@@ -440,7 +457,7 @@ function About() {
   </div>
       <div className="capability-card">
     <div className="capability-icon">
-      <img src={SeleniumIcon} alt="Capability Icon" />
+      <img src={PhotoshopIcon} alt="Capability Icon" />
     </div>
     <h3 className="capability-title">Adobe Photoshop</h3>
     <p className="capability-description">
@@ -453,7 +470,7 @@ function About() {
   </div>
         <div className="capability-card">
     <div className="capability-icon">
-      <img src={SeleniumIcon} alt="Capability Icon" />
+      <img src={LigjtroomIcon} alt="Capability Icon" />
     </div>
     <h3 className="capability-title">Adobe Lightroom</h3>
     <p className="capability-description">
@@ -466,7 +483,7 @@ function About() {
   </div>
         <div className="capability-card">
     <div className="capability-icon">
-      <img src={SeleniumIcon} alt="Capability Icon" />
+      <img src={CapcutIcon} alt="Capability Icon" />
     </div>
     <h3 className="capability-title">Capcut</h3>
     <p className="capability-description">
@@ -479,7 +496,7 @@ function About() {
   </div>
         <div className="capability-card">
     <div className="capability-icon">
-      <img src={SeleniumIcon} alt="Capability Icon" />
+      <img src={FilmoraIcon} alt="Capability Icon" />
     </div>
     <h3 className="capability-title">Filmora</h3>
     <p className="capability-description">

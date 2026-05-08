@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Contact.css";
 import SampleImage from "../assets/capcut-icon.png";
 
@@ -21,12 +22,22 @@ function Contact() {
               San Mateo, Rizal, Philippines 1850
             </p>
 
-            <div className="contact-buttons-container">
-              <button className="btn-contact-me contact">Contact Me</button>
-              <button className="btn-explore contact">Explore Projects</button>
+              <div className="contact-buttons-container">
+                <Link to="/about">
+                  <button className="btn-contact-me contact">
+                    About Me
+                  </button>
+                </Link>
+
+                <Link to="/projects">
+                  <button className="btn-explore contact">
+                    Explore Projects
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
+     
 
         {/* Bottom Column */}
         <div className="column-bottom">
