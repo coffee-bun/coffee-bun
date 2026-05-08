@@ -1,5 +1,7 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// Ensure all necessary components are imported from react-router-dom
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Home from "./sections/Home";
 import About from "./sections/About";
 import Education from "./sections/Education";
@@ -10,7 +12,8 @@ import Footer from "./components/footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    /* Use Router (HashRouter) to ensure GitHub Pages handles your routes correctly */
+    <Router>
       <Navbar />
 
       <Routes>
@@ -20,7 +23,9 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </BrowserRouter>
+
+      <Footer />
+    </Router>
   );
 }
 
