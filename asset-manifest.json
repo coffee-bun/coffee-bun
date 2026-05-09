@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kyledm-web/static/css/main.3e312ea3.css",
-    "main.js": "/kyledm-web/static/js/main.a3f50768.js",
+    "main.css": "/kyledm-web/static/css/main.3aafa6df.css",
+    "main.js": "/kyledm-web/static/js/main.21cd3d42.js",
     "static/js/453.516aa08f.chunk.js": "/kyledm-web/static/js/453.516aa08f.chunk.js",
     "static/media/kyle-hover.jpg": "/kyledm-web/static/media/kyle-hover.230326bc153d4fb795cb.jpg",
     "static/media/sample-image.jpg": "/kyledm-web/static/media/sample-image.ebe03db0f0b176ff2335.jpg",
@@ -27,6 +27,7 @@
     "static/media/Web Development Certificate.jpg": "/kyledm-web/static/media/Web Development Certificate.9e1fc5e155ea6bb874e2.jpg",
     "static/media/vivid-3.jpg": "/kyledm-web/static/media/vivid-3.ae83f7d728ac91f910d4.jpg",
     "static/media/Introduction to Front End Development.jpg": "/kyledm-web/static/media/Introduction to Front End Development.40657db72718655cdf83.jpg",
+    "static/media/portfolio1colored.jpg": "/kyledm-web/static/media/portfolio1colored.53ed83a33d9de40caa56.jpg",
     "static/media/port-2.png": "/kyledm-web/static/media/port-2.8454718ba3739fc99bac.png",
     "static/media/mypupqc-1.png": "/kyledm-web/static/media/mypupqc-1.09243397b83be84aa869.png",
     "static/media/mabl Skills Certification Non-functional testing.jpg": "/kyledm-web/static/media/mabl Skills Certification Non-functional testing.2115a99b0e899e996915.jpg",
@@ -69,19 +70,21 @@
     "static/media/html-icon.png": "/kyledm-web/static/media/html-icon.6e930594286d8afe4c79.png",
     "static/media/photoshop-icon.png": "/kyledm-web/static/media/photoshop-icon.339f174c692e921a204a.png",
     "static/media/video-icon.png": "/kyledm-web/static/media/video-icon.359cf8f3c649d844a272.png",
+    "static/media/gmail-icon.png": "/kyledm-web/static/media/gmail-icon.8cbc560625048ed67ec8.png",
     "static/media/bootstrap-icon.png": "/kyledm-web/static/media/bootstrap-icon.268c4375260420e8d982.png",
     "static/media/capcut-icon.png": "/kyledm-web/static/media/capcut-icon.5dbf289a612e519f8ad6.png",
     "static/media/frontend-icon.png": "/kyledm-web/static/media/frontend-icon.52e98797703cf6e55966.png",
     "static/media/javascript-icon.png": "/kyledm-web/static/media/javascript-icon.3dfb665e058d08c99f28.png",
     "static/media/word-icon.png": "/kyledm-web/static/media/word-icon.a7fc50026ae3f76dd4dc.png",
     "static/media/powerpoint-icon.png": "/kyledm-web/static/media/powerpoint-icon.6027bd04abd30f8b1e3d.png",
+    "static/media/viber-icon.png": "/kyledm-web/static/media/viber-icon.7ca17cc5253ff93a536f.png",
     "index.html": "/kyledm-web/index.html",
-    "main.3e312ea3.css.map": "/kyledm-web/static/css/main.3e312ea3.css.map",
-    "main.a3f50768.js.map": "/kyledm-web/static/js/main.a3f50768.js.map",
+    "main.3aafa6df.css.map": "/kyledm-web/static/css/main.3aafa6df.css.map",
+    "main.21cd3d42.js.map": "/kyledm-web/static/js/main.21cd3d42.js.map",
     "453.516aa08f.chunk.js.map": "/kyledm-web/static/js/453.516aa08f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e312ea3.css",
-    "static/js/main.a3f50768.js"
+    "static/css/main.3aafa6df.css",
+    "static/js/main.21cd3d42.js"
   ]
 }
