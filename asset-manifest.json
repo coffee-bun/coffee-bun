@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kyledm-web/static/css/main.3aafa6df.css",
-    "main.js": "/kyledm-web/static/js/main.b0592bb2.js",
+    "main.css": "/kyledm-web/static/css/main.2e0f4796.css",
+    "main.js": "/kyledm-web/static/js/main.c077bff4.js",
     "static/js/453.516aa08f.chunk.js": "/kyledm-web/static/js/453.516aa08f.chunk.js",
     "static/media/kyle-hover.jpg": "/kyledm-web/static/media/kyle-hover.230326bc153d4fb795cb.jpg",
     "static/media/sample-image.jpg": "/kyledm-web/static/media/sample-image.ebe03db0f0b176ff2335.jpg",
@@ -79,12 +79,12 @@
     "static/media/powerpoint-icon.png": "/kyledm-web/static/media/powerpoint-icon.6027bd04abd30f8b1e3d.png",
     "static/media/viber-icon.png": "/kyledm-web/static/media/viber-icon.7ca17cc5253ff93a536f.png",
     "index.html": "/kyledm-web/index.html",
-    "main.3aafa6df.css.map": "/kyledm-web/static/css/main.3aafa6df.css.map",
-    "main.b0592bb2.js.map": "/kyledm-web/static/js/main.b0592bb2.js.map",
+    "main.2e0f4796.css.map": "/kyledm-web/static/css/main.2e0f4796.css.map",
+    "main.c077bff4.js.map": "/kyledm-web/static/js/main.c077bff4.js.map",
     "453.516aa08f.chunk.js.map": "/kyledm-web/static/js/453.516aa08f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3aafa6df.css",
-    "static/js/main.b0592bb2.js"
+    "static/css/main.2e0f4796.css",
+    "static/js/main.c077bff4.js"
   ]
 }
