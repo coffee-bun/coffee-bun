@@ -141,8 +141,8 @@ function Projects() {
           </Link>
           {/* Add the new Other Projects button here */}
           <Link to="/other-projects">
-            <button className="other-projects-btn">Other Projects</button>
-          </Link>
+         {/*    <button className="other-projects-btn">Other Projects</button> */}
+          </Link>     {/* ENABLE IF ANY  */}
         </div>
       </div>
     </aside>
