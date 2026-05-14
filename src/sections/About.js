@@ -83,7 +83,7 @@ function About() {
             <p>An aspiring IT professional with experience in <strong>Front-End Developer</strong> gained through academic projects and continuous self-practice.
            Passionate about creating responsive and user-friendly web interfaces while continuously improving skills in UI/UX design, web development, and building functional digital experiences. </p>
             
-            <p>I’m also passionate about <strong>Web Designing </strong>< strong>Web Development </strong> especially in creating clean, responsive, and user-friendly interfaces.
+            <p>I’m also passionate about <strong>Web Designing </strong> and < strong> Web Development </strong> especially in creating clean, responsive, and user-friendly interfaces.
             I believe great digital experiences are not only visually appealing but also functional and reliable.I pay close attention to details, carefully checking each feature and interaction to ensure everything works smoothly and meets a high standard of user experience.</p>
             
             <p>I’m also passionate about <strong>Quality Assurance Testing</strong>, with professional experience in Video Game Testing and hands-on experience in manual testing for systems and applications.
