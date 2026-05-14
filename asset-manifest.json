@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kyledm-web/static/css/main.2e0f4796.css",
-    "main.js": "/kyledm-web/static/js/main.a832fddd.js",
+    "main.css": "/kyledm-web/static/css/main.e52fc24f.css",
+    "main.js": "/kyledm-web/static/js/main.03d5b7ef.js",
     "static/js/453.516aa08f.chunk.js": "/kyledm-web/static/js/453.516aa08f.chunk.js",
     "static/media/kyle-hover.jpg": "/kyledm-web/static/media/kyle-hover.230326bc153d4fb795cb.jpg",
     "static/media/sample-image.jpg": "/kyledm-web/static/media/sample-image.ebe03db0f0b176ff2335.jpg",
@@ -61,12 +61,14 @@
     "static/media/hardware-icon.png": "/kyledm-web/static/media/hardware-icon.2cb7c63577cb42ed8605.png",
     "static/media/software-icon.png": "/kyledm-web/static/media/software-icon.a302df276be901d69bce.png",
     "static/media/photography-icon.png": "/kyledm-web/static/media/photography-icon.3e8694568fc0ba58b625.png",
+    "static/media/socmend-icon.png": "/kyledm-web/static/media/socmend-icon.0e422e8a94661f3c55ed.png",
     "static/media/troubleshoot-icon.png": "/kyledm-web/static/media/troubleshoot-icon.cb7ff2665ed281b9fd57.png",
     "static/media/jira-icon.png": "/kyledm-web/static/media/jira-icon.08d3740a6567ac7ed8ad.png",
     "static/media/webdev-icon.png": "/kyledm-web/static/media/webdev-icon.f9d169e80e84e333a6d1.png",
     "static/media/qa-icon.png": "/kyledm-web/static/media/qa-icon.a874f64d5f19225217c5.png",
     "static/media/outlook-icon.png": "/kyledm-web/static/media/outlook-icon.0fda0fac7035652b6a3f.png",
     "static/media/leader-icon.png": "/kyledm-web/static/media/leader-icon.4d9c62c35022c9e70026.png",
+    "static/media/photoshop-image.png": "/kyledm-web/static/media/photoshop-image.4c8fc1f1dbcbcd6306d9.png",
     "static/media/wix-icon.png": "/kyledm-web/static/media/wix-icon.1a78c7f5c8b43e5710e5.png",
     "static/media/css-icon.png": "/kyledm-web/static/media/css-icon.57ac229d6c624bed3295.png",
     "static/media/figma-icon.png": "/kyledm-web/static/media/figma-icon.72fbc535ebe253a5dbc4.png",
@@ -82,12 +84,12 @@
     "static/media/powerpoint-icon.png": "/kyledm-web/static/media/powerpoint-icon.6027bd04abd30f8b1e3d.png",
     "static/media/viber-icon.png": "/kyledm-web/static/media/viber-icon.7ca17cc5253ff93a536f.png",
     "index.html": "/kyledm-web/index.html",
-    "main.2e0f4796.css.map": "/kyledm-web/static/css/main.2e0f4796.css.map",
-    "main.a832fddd.js.map": "/kyledm-web/static/js/main.a832fddd.js.map",
+    "main.e52fc24f.css.map": "/kyledm-web/static/css/main.e52fc24f.css.map",
+    "main.03d5b7ef.js.map": "/kyledm-web/static/js/main.03d5b7ef.js.map",
     "453.516aa08f.chunk.js.map": "/kyledm-web/static/js/453.516aa08f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e0f4796.css",
-    "static/js/main.a832fddd.js"
+    "static/css/main.e52fc24f.css",
+    "static/js/main.03d5b7ef.js"
   ]
 }
